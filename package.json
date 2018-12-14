@@ -1,0 +1,19 @@
+{
+  "name": "RSW-Boiler-Plare",
+  "version": "0.1.0",
+  "author": "Stephen Vicino",
+  "private": true,
+  "devDependencies": {
+    "css-condense": "0.0.6",
+    "grunt": "^0.4.5",
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-cssc": "^0.2.6",
+    "grunt-sass": "^2.0.0",
+    "matchdep": "*"
+  }
+}

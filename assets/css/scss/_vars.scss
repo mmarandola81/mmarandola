@@ -1,0 +1,109 @@
+/* Variables */
+
+/*====================COLORS AND BRANDING COLORS==========================*/
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777          
+$gray-lighter:          #d3d3d3; // #eee lighten($gray-base, 93.5%) !default;
+$gray-lightest:         #e5e5e5;
+
+$brand-primary:         #007DC4 !default; // #2CA5D4
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+$algae-blue:            #43bbff;
+$algae-aqua:            #20c4c7;
+$algae-dk-aqua:         #008ba4;
+$algae-green:           #40ad4a;
+$algae-dk-green:        #4c813d;
+$algae-gray:            #67676E;
+$algae-orange:          #e87b15;
+
+
+@mixin hover-state {
+    &:hover, &:active, &:focus {
+        @content;
+    }
+}
+
+@mixin tn {
+  @media (max-width: 375px) { 
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: 480px) { 
+    @content;
+  }
+}
+
+@mixin s {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin m {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin l {
+  @media (max-width: 1200px){
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1201px) {
+    @content;
+  }
+}
+
+@mixin s-only {
+  @media (min-width: 480px) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin m-only {
+  @media (min-width: 768px) and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin l-only {
+  @media (min-width: 992px) and (max-width: 1200px){
+    @content;
+  }
+}
+
+@mixin iPad-portrait {
+  @media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin iPad-landscape {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 767px) {
+    @content;
+  }
+}
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin vertical-align-2 {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
